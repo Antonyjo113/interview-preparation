@@ -1,0 +1,24 @@
+JAVA SCRIPT
+===============================================================
+
+1. WHAT IS JAVA SCRIPT
+In 1995, Javascript was developed by Brendan Eich
+light-weight object oriented programming language
+    used to build the web application, supporting to both front-end and back-end technologies
+
+
+2. FEATURE OF JAVA SCRIPT
+all popular web browsers support Javascript as they builtin execution programming
+Structural programming language - like C, C++
+light-weight languages, object oriented
+Is a Casssensitive language
+
+
+
+
+
+
+
+
+
+
