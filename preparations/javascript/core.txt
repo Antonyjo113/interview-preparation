@@ -8,11 +8,49 @@ light-weight object oriented programming language
 
 
 2. FEATURE OF JAVA SCRIPT
-all popular web browsers support Javascript as they builtin execution programming
+All popular web browsers support Javascript as they builtin execution programming
 Structural programming language - like C, C++
 light-weight languages, object oriented
-Is a Casssensitive language
+Is a Casesensitive language
 
+
+3. JAVASCRIPT STATEMENTS
+Java Script statements compose of value, operators, expressions, keywords, and comments 
+
+
+4. COMMENTS
+To explain the JavaScript code - make it more readable
+Prevent execution, when testing alternative code
+    // , /* */
+
+
+5. VARIABLES
+Four type of variables
+    Automatically - direct initailize the value - a = 10
+    let - declare in a block of statements, can not be redeclared
+    var - can declare as global variables
+    const - can not change the value once it declared, can not be redeclared, can not be reassigned
+
+
+6. OPERATORS
+Arithmetic - perform arithmetic on numbers
+    +, -, *, **, /, %, 
+Assignment - assign value to variables
+    =, +=, -=, *=, **=, /=, %=
+Comparison - compare value to variables
+    ==, ===, !=, !==, <, >, <=, >=, ?
+Logical - used to test for true or fasle
+    &&, ||, !
+
+
+7. DATA TYPES
+To be able to operate on variables,
+String, Number, Boolean, Undefined, null, Bigint - scientific notations ex: 123e-5
+
+
+8. FUNCTIONS
+Block of code to perform a particular task
+    function myFunction(a,b) { }
 
 
 
