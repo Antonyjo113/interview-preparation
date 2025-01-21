@@ -1,0 +1,26 @@
+FULL NAMEl Antony Joseph Raj
+CURRENT ADDRESS: Taramani, Chennai.
+
+
+PROFESSIONAL EXPERIENCE:
+JMAN Group - Chennai
+Software Engineer
+Dec 2021 - Present
+As a full-stack developer with 3 years of experience, I specialize in building scalable web applications using Node.js and
+React.js. My expertise includes designing responsive and dynamic UI components, developing efficient back-end
+architectures, and integrating RESTful APIs. With a strong understanding of both client-side and server-side technologies,
+I deliver end-to-end solutions.
+
+Education:
+Thiruvalluvar University - Vellore
+MSc - Computer Science
+Aug 2018 - March 2020
+GPA - 7.63
+
+Thiruvalluvar University - Vellore
+BCA
+July 2015 - March 2018
+GPA - 7.33
+
+HOBBIES & INTERESTS:
+Playing chess
