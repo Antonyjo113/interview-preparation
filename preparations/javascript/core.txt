@@ -53,10 +53,22 @@ Block of code to perform a particular task
     function myFunction(a,b) { }
 
 
-
-
-
-
-
-
-
+9. STRING METHODS
+text = "JavaScript language"
+length - return the length of string - text.length
+charAt() - return the character of specified index in a string - text.charAt(2): v
+charCodeAt() - return the character unicode of specified index in a string - text.charCodeAt(2): 118
+at() - return the element of specified index in a string - text.at(2): v
+slice() - extract a part of string(from start index & end index) from a string - text.slice(2:4): va
+substring() - extract a part of string(from start index & end index) from a string - text.substring(2:4): va
+substr() - extract a part of string(from start index & length index) from a string - text.substr(2:2): va
+toUpperCase() - convert a string to uppercase - text.toUpperCase()
+toLowerCase() - convert a string to lowercase - text.toLowerCase()
+concat() - join the two string - text.concat("", text2)
+trim() - remove whitespace from both side of string - text.trim()
+trimStart() - remove whitespace from start side of string - text.trimStart()
+trimEnd() - remove whitespace from end side of string - text.trimEnd()
+repeat() - return a string with a number copies of a string - text.repeat(2)
+replace() - replace a string with another value of string - text.replace("Java", "Python")
+replaceAll() - replace a string with another value of string - text.replaceAll("Java", "Python")
+split() - split a string with space - text.split(" ")
