@@ -119,5 +119,25 @@ parseFloat - convert string into float - parseFloat("10"): 10
     - Number("string 33"): Nan
 
 
+11. ARRAY:
+Special variable In JavaScript, used to store the multiple values in a single variable
+
+ 
+12. ARRAY METHODS:
+const data = ['banana', 'apple', 'orange', 'mango']
+length - return the array of length - data.length : 4
+toString() - convert a array into string - data.toString() : banana,apple,orange,mango
+at() - get the element of specified index from string - data.at(2) : orange
+join() - join all array into string - data.join(*) : banana*apple*orange*mango
+pop() - remove the last element from an array - data.pop(): ['banana', 'apple', 'orange']
+push() - add the element an array at the last - data.push('grape') : ['banana', 'apple', 'orange', 'mango', 'grape']
+Shift() - remove the first element from an array - data.shift(): ['apple', 'orange', 'mango']
+unshift() - add the element an array at the first - data.unshift('grape') : ['grape', 'banana', 'apple', 'orange', 'mango']
+delete() - remove the element of specified index in a array - delete data[2] : ['banana', 'apple', 'orange', 'grape']
+concat() -  join the two array - data.concat(data2):
+data.concat(data2, data3):
+copyWithin - copy an element from array, and moved to another position - data.copyWithin(2,0) : ['banana', 'apple', 'banana', 'mango']
+flat() - create a new array from two dimensional array -
+    - [[1,2], [3,4], [5,6]] : [1,2,3,4,5,6]
 
 

@@ -1,0 +1,69 @@
+NODE JS:
+Open source server environment, allows to run JavaScript on the server.
+ 
+ 
+CONNECT THE SERVER:
+Install the http npm package and connect the localhost server
+var http = require('http');
+ 
+http.createServer(function (req, res) {
+ res.writeHead(200, {'Content-Type': 'text/html'});
+ res.end('Hello World!');
+}).listen(8080);
+ 
+ 
+EXPRESS JS
+Is a web application framework, that provides to create api to build the websites
+Providing a structural approach to managing server-side logic.
+
+// Import express
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, Express!');
+});
+
+app.get('/about', (req, res) => {
+  res.send('About Page');
+});
+
+// Start the server and listen on port 3000
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+ 
+ 
+WHY EXPRESS JS
+Simplicity: less code and simple code
+Flexibility: can build more modules
+Scalability: can build wild range project
+Community supports: large & active community
+ 
+ 
+CORS: - Cross Origin Resource Sharing
+Allows or restricts which domain can access your api.
+ 
+ 
+ROUTES:
+Allow to user to navigate to specific url
+ 
+ 
+MIDDLEWARE:
+User-defined function that has each requests passes through before reaching the routes, and intercept of request, run the code and decide what to do next.
+ 
+ 
+EsLint:
+Automatically detecting incorrect patterns found in javascript code
+ 
+ 
+Test pyramid:
+Three types: Unit testing, Integration Testing, End-to-end test
+ 
+ 
+Scaffolding:
+To generating basic structure of project
+ 
+ 
+Top 30+ Express.js Interview Questions and Answers for 2024

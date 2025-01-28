@@ -1,0 +1,10 @@
+TYPESCRIPT
+Typescript is JavaScript with added syntax for types
+ 
+TYPESCRIPT PRIMITIVES DATATYPES
+boolean, number, string
+bigint, symbol
+ 
+ 
+TYPESCRIPT SPECIAL TYPES
+any, unknown, never, undefined, null
