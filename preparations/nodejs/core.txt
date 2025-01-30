@@ -1,7 +1,14 @@
 NODE JS:
 Open source server environment, allows to run JavaScript on the server.
+Server-side script to develop the scalable web application.
+
+
+FEATURE:
+Asynchronounus & Data driven
+Single thread application
+v8 Google Chrome Engine running in Javascript 
  
- 
+
 CONNECT THE SERVER:
 Install the http npm package and connect the localhost server
 var http = require('http');
@@ -44,6 +51,7 @@ Community supports: large & active community
  
 CORS: - Cross Origin Resource Sharing
 Allows or restricts which domain can access your api.
+Helps to secure the application to access which resource can be it.
  
  
 ROUTES:

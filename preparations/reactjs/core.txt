@@ -1,0 +1,48 @@
+REACTJS:
+Open-source JavaScript Library
+using to build Single page application
+
+
+JSX:
+JavaScript XML, allow to write HTML code to Javascript render DOM.
+
+
+VIRTUAL DOM:
+keeps lightweight a representation of real dom in memory, called Virtual DOM.
+Virual DOM changes only in real DOM rather than updating all objects
+
+
+UNIDIRECTIONAL & BIDIRECTIONAL:
+Unidirectional - one way communication, parent component to child component
+Birectional - two way communication, between of parent & child component
+
+
+ADVANTAGES & DISADVANTAGES:
+Advantage: 
+    component based architecture - reusable components
+    Virtual DOM - keeps a lightweight representation of real DOM in memory
+    JSX - Javascript XML
+
+
+Disadvantage:
+    high pace developement - continues to updates from React.js, so developer not comfortable to relearn
+    poor documentation - not providing proper documentation for the new updates & acceleratings
+    JSX - very hard to manage the HTML & Javascript codes in one place
+
+
+FUNCTIONAL COMPONENT:
+Lifecycle - Statless component
+Shorter syntax - easy to write, small component
+Hooks - use hooks concepts to UseState, UseEffect to get the data, update etc..
+
+
+CLASS COMPONENT:
+Lifecycle - Stateful component, internal state & have Lifecycle methods like 
+    componentDidMount, componentDidUpdate, ComponentWillMount
+Verbose syntax - has large code, requiring to use constructor & render methods
+
+
+LINK:
+https://www.interviewbit.com/react-interview-questions/
+
+
