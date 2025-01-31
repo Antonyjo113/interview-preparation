@@ -6,7 +6,7 @@ Server-side script to develop the scalable web application.
 FEATURE:
 Asynchronounus & Data driven
 Single thread application
-v8 Google Chrome Engine running in Javascript 
+Nodejs scripting code runs Google Chrome v8 Engine
  
 
 CONNECT THE SERVER:
@@ -72,6 +72,38 @@ Three types: Unit testing, Integration Testing, End-to-end test
  
 Scaffolding:
 To generating basic structure of project
- 
- 
-Top 30+ Express.js Interview Questions and Answers for 2024
+
+
+ADVANTAGES:
+Asynchronounus, Data driven
+Scalability - Asynchronounus allow to build large concurrent connections efficiently,
+Fast execution - Nodejs runs on Chrome v8 Engine
+
+DISADVANTAGES:
+Callback hell -
+Signle thread process - can not handle the heavy operations
+Debug is difficult -
+
+
+MICROSERVICE:
+Collection small independent service connecting with other service
+
+MACROSERVICE:
+Entire application built as a single, unified unit
+Titly connected with interagrated and component
+
+
+BUFFER:
+Perform an action in raw binary data, memory location in memory
+
+
+STREAMS:
+Type of data handling method, read & write inputs into output sequentially.
+
+
+CRYPTO:
+Encrypt and decrypt data, for the the data secure, creating hash value
+
+
+CALLBACK HELL:
+Nested Callback process, 
