@@ -61,7 +61,59 @@ def factorial(n):
     return n * factorial(n - 1)  # Recursive case: n! = n * (n-1)!
 
 # Test case
-print(factorial(1))  # Expected output: 1
+print(factorial(5))  # Expected output: 120
 ```
+
+## 4. **Fibonacci Sequence**
+
+The **Fibonacci sequence** is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence goes:
+
+`0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...`
+
+Mathematically, the Fibonacci sequence is defined by:
+
+- `F(0) = 0`
+- `F(1) = 1`
+- `F(n) = F(n-1) + F(n-2)` for `n ≥ 2`
+
+### 📝 **Python Code to Generate Fibonacci Sequence**
+
+```python
+# Function to generate the Fibonacci sequence up to the nth term
+def fibonacci(n):
+    fib = [0, 1]  # Initializing the first two numbers in the sequence
+    for i in range(2, n):  # Start loop from the 3rd term (index 2)
+        fib.append(fib[i - 1] + fib[i - 2])  # Add the sum of the last two terms
+    return fib
+
+# Test case: Generate the first 10 Fibonacci numbers
+print(fibonacci(10))  # Expected output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+```
+
+
+## 5. **Count Vowels in a String**
+
+In this task, we are asked to **count the number of vowels** (i.e., `a, e, i, o, u`) in a given string. This includes both **lowercase** and **uppercase vowels**.
+
+### 📝 **Python Code to Count Vowels**
+
+```python
+# Function to count the number of vowels in a given string
+def count_vowels(s):
+    vowels = 'aeiouAEIOU'  # List of vowels (both lowercase and uppercase)
+    a = 0  # Initialize counter for vowels
+    
+    # Loop through each character in the string
+    for char in s:
+        if char in vowels:  # Check if character is a vowel
+            a += 1  # Increment the counter for vowels
+            
+    return a  # Return the total count of vowels
+```
+
+# Example Test Cases:
+print(count_vowels("hello"))       # Expected output: 2
+print(count_vowels("education"))   # Expected output: 5
+
 
 
