@@ -64,6 +64,7 @@ def factorial(n):
 print(factorial(5))  # Expected output: 120
 ```
 
+
 ## 4. **Fibonacci Sequence**
 
 The **Fibonacci sequence** is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1. The sequence goes:
@@ -109,11 +110,8 @@ def count_vowels(s):
             a += 1  # Increment the counter for vowels
             
     return a  # Return the total count of vowels
-```
 
 # Example Test Cases:
 print(count_vowels("hello"))       # Expected output: 2
 print(count_vowels("education"))   # Expected output: 5
-
-
-
+```
