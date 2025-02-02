@@ -43,7 +43,7 @@ right_angled_triangle_pattern(5)  # Expected output: Right-aligned triangle of s
 ```
 
 
-# PATTERN - 1:
+## PATTERN - 1:
 
 ```python
 def left_bottom_to_top(n):
@@ -57,7 +57,7 @@ left_bottom_to_top(5)
 ```
 
 
-# PATTERN - 2:
+## PATTERN - 2:
 
 ```python
 def left_top_to_bottom(n):
@@ -71,7 +71,7 @@ left_top_to_bottom(5)
 ```
 
 
-# PATTERN - 3:
+## PATTERN - 3:
 
 ```python
 def right_bottom_to_top(n):
@@ -88,7 +88,7 @@ right_bottom_to_top(5)
 ```
 
 
-# PATTERN - 4:
+## PATTERN - 4:
 
 ```python
 def right_top_to_bottom(n):
@@ -105,7 +105,7 @@ right_top_to_bottom(5)
 ```
 
 
-# PATTERN - 5:
+## PATTERN - 5:
 
 ```python
 def prymiod(n):
@@ -124,7 +124,7 @@ def prymiod(n):
 prymiod(5)
 ```
 
-# PATTERN - 6:
+## PATTERN - 6:
 
 ```python
 def prymiod_bottom(n):
@@ -144,7 +144,7 @@ prymiod_bottom(5)
 ```
 
 
-# PATTERN - 7:
+## PATTERN - 7:
 
 ```python
 def diomond(n):
@@ -175,7 +175,7 @@ diomond(5)
 ```
 
 
-# PATTERN - 8:
+## PATTERN - 8:
 
 ```python
 def butterfly(n):
@@ -214,7 +214,7 @@ butterfly(5)
 ```
 
 
-# PATTERN - 9:
+## PATTERN - 9:
 
 ```python
 def numbers(n):
@@ -231,7 +231,7 @@ numbers(5)
 ```
 
 
-# PATTERN - 10:
+## PATTERN - 10:
 
 ```python
 def numbers2(n):
