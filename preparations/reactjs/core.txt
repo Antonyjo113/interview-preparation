@@ -46,3 +46,12 @@ LINK:
 https://www.interviewbit.com/react-interview-questions/
 
 
+COMPONENTDIDMOUNT:
+Called once, after the component render to the DOM, fetching API
+COMPONENTDIDUPDATE:
+Called, after the component updated, after state or props changed
+COMPONENTWILLUNMOUNT:
+Called, before the component removed, Cancelling the API
+
+
+

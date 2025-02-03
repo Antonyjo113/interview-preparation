@@ -106,4 +106,4 @@ Encrypt and decrypt data, for the the data secure, creating hash value
 
 
 CALLBACK HELL:
-Nested Callback process, 
+Nested Callback process, resolve by promise method
