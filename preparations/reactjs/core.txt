@@ -54,4 +54,10 @@ COMPONENTWILLUNMOUNT:
 Called, before the component removed, Cancelling the API
 
 
+USEMEMO:
+Memoizes a computed value, does not get recalculated for every render
+optimize performance by memorizing the result
 
+
+USEREDUER:
+advanced alternative to useState for managing more complex logic in state(similer to redux)

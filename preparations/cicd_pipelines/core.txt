@@ -1,0 +1,14 @@
+CI/CD PIPELINES:
+
+
+
+
+LINKS:
+https://www.youtube.com/watch?v=Hv5UcBYseus
+
+
+
+VERISON:
+Path - build/git_update.sh
+
+
