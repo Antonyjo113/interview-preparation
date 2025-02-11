@@ -107,3 +107,19 @@ Encrypt and decrypt data, for the the data secure, creating hash value
 
 CALLBACK HELL:
 Nested Callback process, resolve by promise method
+
+
+HEADERS:
+Authorization: bearer API KEY
+'Content-Type': 'application/json' , multipart/form-data' , 'application/x-www-form-urlencoded'
+'Accept' : 'application/json' , 'application/xml'
+'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+'Cookie': 'sessionid=your-session-id'
+'Cache-Control': 'no-cache'
+'Origin': 'https://your-website.com'
+
+
+What is the Event Loop?
+The event loop is a core concept in Node.js that helps the server handle multiple tasks simultaneously, 
+even though it's running on a single thread. It does this by managing and executing asynchronous operations 
+(like reading files, database calls, etc.) efficiently.

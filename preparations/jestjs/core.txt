@@ -3,3 +3,11 @@ Jest is open-source testing framework built by Facebook
 Javascript Testing Libraray
 
 
+MATCHERS:
+toBe() - Check stict value, like string & numbers
+toEqual() - Check the value, object & array
+toBeNull() - Check the null value
+toBeTruthy() - Check the boolean value
+toHaveLength() - Check the Array length value
+
+

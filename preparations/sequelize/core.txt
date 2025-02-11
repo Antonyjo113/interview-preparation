@@ -1,0 +1,20 @@
+SEQUELIZE:
+Sequelize is an ORM(Object Relation Mapping) for node js. 
+Help to read and manipulate the Database data into javascript code
+
+
+COMMANDS:
+npx sequelize-cli init - sequelize initialization
+npx sequelize-cli migration:generate --name create-users - Create a migration file
+sequelize db:migrate - create user in table
+
+
+
+findAll(), findOne(), findByPk(), create()
+
+
+limit, offset
+
+
+one-to-one, one-to-many, and many-to-many
+

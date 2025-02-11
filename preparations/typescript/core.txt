@@ -4,7 +4,19 @@ Typescript is JavaScript with added syntax for types
 TYPESCRIPT PRIMITIVES DATATYPES
 boolean, number, string
 bigint, symbol
- 
+number, string, boolean, null, undefined, symbol, bigint
+
  
 TYPESCRIPT SPECIAL TYPES
 any, unknown, never, undefined, null
+
+
+What are generics in TypeScript?
+
+Generics allow you to define functions, classes, or interfaces that can work with any type while still maintaining type safety.
+typescript
+Copy
+function identity<T>(value: T): T {
+  return value;
+}
+
