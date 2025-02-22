@@ -139,5 +139,64 @@ data.concat(data2, data3):
 copyWithin - copy an element from array, and moved to another position - data.copyWithin(2,0) : ['banana', 'apple', 'banana', 'mango']
 flat() - create a new array from two dimensional array -
     - [[1,2], [3,4], [5,6]] : [1,2,3,4,5,6]
+slice() - slice out a peice of array into a new array  -
+    const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    const citrus = fruits.slice(1); // ["Orange", "Lemon", "Apple", "Mango"]
+    const citrus = fruits.slice(1, 3); // ["Orange", "Lemon"]
+splice() - add new items into a array
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 0, "Lemon", "Kiwi"); // ["Banana", "Orange", "Lemon", "Kiwi", "Apple", "Mango"]
+    fruits.splice(2, 2, "Lemon", "Kiwi"); // ["Banana", "Orange", "Lemon", "Kiwi"]
+        - first parameter adding count of items(position - where need to be added)
+        - second parameter removing count of items
+
+indexOf - find the element in array and return the position
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+    let position = fruits.indexOf("Apple") // 2
+        - if element not present return -1
+lastIndexOf() - find the element in array and return last occurence of position
+    const fruits = ["Apple", "Orange", "Apple", "Mango"];
+    let position = fruits.lastIndexOf("Apple") // 2
+includes() - check the element is present or not in the array and return true or false
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.includes("Mango"); // true
+find() - find the element which is satified value in array  and return the element
+    let arr = [5, 12, 8, 130, 44];
+    let result = arr.find(element => element > 10); // 12
+findIndex() - find the element which is satified value in array  and return the element position
+    let arr = [5, 12, 8, 130, 44];
+    let result = arr.findIndex(element => element > 10); // 1
+again findLast(), findLastIndex()
+findLast() - sort the array as alphabetically
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort(); //[ 'Apple', 'Banana', 'Mango', 'Orange' ]
+reverse() - reverse the element in a arrary
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.reverse(); // [ 'Mango', 'Apple', 'Orange', 'Banana' ]
+toSorted() - method as a safe way to sort an array without altering the original array
+    const months = ["Jan", "Feb", "Mar", "Apr"];
+    const sorted = months.toSorted(); // [ 'Apr', 'Feb', 'Jan', 'Mar' ]
+toReversed() - method as a safe way to reverse an array without altering the original array
+    const months = ["Jan", "Feb", "Mar", "Apr"];
+    const reversed = months.toReversed(); // [ 'Apr', 'Mar', 'Feb', 'Jan' ]
+forEach() - Executes a provided function once for each array element.
+    const arr = [1, 2, 3, 4, 5];
+    arr.forEach(element => {
+    console.log(element * 2); // Output: 2, 4, 6, 8, 10
+    });
+        - first parameter - value, second parameter - index, third parameter - array
+map() - creates a new array by performing a function on each array element, method does not change the original array.
+    const arr = [1, 2, 3, 4, 5];
+    arr.forEach(element => {
+    console.log(element * 2); // Output: 2, 4, 6, 8, 10
+    });
+filter() - method creates a new array with array elements that pass a test.
+    const arr = [1, 2, 3, 4, 5];
+    const evenNumbers = arr.filter(element => element % 2 === 0);
+    console.log(evenNumbers); // [2,4]
+reduce() - method runs a function on each array element to produce (reduce it to) a single value.
+    const arr = [1, 2, 3, 4, 5];
+    const sum = arr.reduce((acc, element) => acc + element, 0);
+    console.log(sum);
 
 
