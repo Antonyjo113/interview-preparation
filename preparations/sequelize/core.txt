@@ -10,7 +10,7 @@ sequelize db:migrate - create user in table
 
 
 
-findAll(), findOne(), findByPk(), create()
+findAll(), findOne(), findByPk(), create(), update()
 
 
 limit, offset

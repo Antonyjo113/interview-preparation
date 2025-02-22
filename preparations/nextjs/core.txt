@@ -1,0 +1,17 @@
+WHAT IS:
+React JS framework, Server-side rendering, routing in a sinple application
+
+Static Site Generation (SSG): 
+Pages are pre-rendered at build time and served as static HTML. Use getStaticProps for SSG.
+getStaticProps is used for Static Site Generation (SSG). It runs at build time and fetches data for the page before rendering it to static HTML. 
+
+
+
+5. What is the difference between getStaticProps and getServerSideProps?
+Answer:
+
+getStaticProps: Used for Static Site Generation (SSG). It runs at build time and pre-renders the page as static HTML. The content is generated once and does not change unless the site is re-built.
+getServerSideProps: Used for Server-Side Rendering (SSR). It runs on every request and renders the page with fresh data each time.
+
+
+

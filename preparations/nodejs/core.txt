@@ -99,6 +99,10 @@ Perform an action in raw binary data, memory location in memory
 
 STREAMS:
 Type of data handling method, read & write inputs into output sequentially.
+  Readable stream
+  Writable stream
+  Duplex stream - read and write
+  Transform stream - compression files, encryption
 
 
 CRYPTO:
@@ -123,3 +127,28 @@ What is the Event Loop?
 The event loop is a core concept in Node.js that helps the server handle multiple tasks simultaneously, 
 even though it's running on a single thread. It does this by managing and executing asynchronous operations 
 (like reading files, database calls, etc.) efficiently.
+Nodejs operates single thread event loop, which allows to handle the muliple operations asynchronously.
+  Single thread, Non-blocking I/O, Data driven
+
+
+JWT Token:
+types
+  Access Token - Authorize service - short live(few mintues to hours)
+  Refresh token - Obtain new token when expired - long live(day to week)
+  ID Token - Authenticate to identify the user - short live(few mintues to hours)
+  Custom token - Custom application specific purpose - various
+
+  Unix Timestamp - 792397929
+
+
+PUT vs PATCH:
+PUT -  Update entire column data in a row, if id does not exist inserting a new row,
+        - CREATE OR REPLACE method
+PATCH - Update only one column in a row
+
+
+
+
+
+
+
