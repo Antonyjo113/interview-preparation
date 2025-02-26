@@ -52,7 +52,13 @@ Community supports: large & active community
 CORS: - Cross Origin Resource Sharing
 Allows or restricts which domain can access your api.
 Helps to secure the application to access which resource can be it.
- 
+  const corsOptions = {
+    origin: 'https://frontend.com', 
+    methods: ['GET', 'POST'], 
+  };
+
+  app.use(cors(corsOptions));
+
  
 ROUTES:
 Allow to user to navigate to specific url
@@ -60,7 +66,29 @@ Allow to user to navigate to specific url
  
 MIDDLEWARE:
 User-defined function that has each requests passes through before reaching the routes, and intercept of request, run the code and decide what to do next.
- 
+  application
+      app.use((req, res, next) => {
+        console.log('Request received');
+        next();
+      });
+  Router level
+      const router = express.Router();
+
+      router.use((req, res, next) => {
+        console.log('Router-level middleware');
+        next();
+      });
+
+      router.get('/example', (req, res) => {
+        res.send('This is an example route');
+      });
+
+      app.use('/api', router);
+
+  Custom middleware
+
+  Built-in middleware
+      app.use(express.json());
  
 EsLint:
 Automatically detecting incorrect patterns found in javascript code
@@ -147,7 +175,36 @@ PUT -  Update entire column data in a row, if id does not exist inserting a new 
 PATCH - Update only one column in a row
 
 
+EventEmitter:
+events module that allows objects to emit events and handle events asynchronously. 
+It's a fundamental part of the Node.js architecture
 
+Closure:
+Define a function inside of with another functiion
+allow to access the outer function variable to the inside of functions
+
+
+Stateless vs Stateful:
+Stateless:
+each request from a client to a server is independent, meaning the server does not retain any knowledge of previous requests.
+Every request must contain all the necessary information for the server to understand and process it. REST APIs are typically stateless.
+  Example in Node.js: An API where each request contains all necessary data (e.g., authentication token in the header), and the server doesn't store user session information.
+
+Stateful: 
+In a stateful system, the server keeps track of the state of the client between requests. This means that the server stores data, such as user sessions, 
+that is retained across multiple interactions. This could be useful for things like login sessions or shopping carts.
+  Example in Node.js: A Node.js application using express-session or cookie-based authentication to track user sessions.
+
+
+REST API vs RESTful API:
+REST API
+REST stands for Representational State Transfer. It is an architectural style (not a protocol or standard) for designing networked applications.
+It relies on a stateless, client-server, cacheable communication protocol
+Serverless - server must contain all the information needed to understand and process the request.
+Uniform Interface - operations are performed using standard HTTP methods (GET, POST, PUT, DELETE).
+
+RESTful API:
+This is a more strict implementation of REST. It adheres fully to the REST principles and constraints. 
 
 
 

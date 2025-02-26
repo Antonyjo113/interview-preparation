@@ -8,7 +8,11 @@ number, string, boolean, null, undefined, symbol, bigint
 
  
 TYPESCRIPT SPECIAL TYPES
-any, unknown, never, undefined, null
+any - allow to define the muliple types
+unknown, 
+never, 
+undefined, 
+null
 
 
 What are generics in TypeScript?
@@ -19,4 +23,13 @@ Copy
 function identity<T>(value: T): T {
   return value;
 }
+
+Readonly;
+readonly - prevent to change the value
+  const names: readonly string[] = ["Dylan"];
+  names.push("Jack");
+
+
+
+
 

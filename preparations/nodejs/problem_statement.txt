@@ -1,0 +1,49 @@
+Problem 1: CSV Data Processing and API Creation
+Objective: Create an API that reads data from a CSV file, processes it, and provides the results through a RESTful endpoint.
+Tasks:
+
+Read a CSV file containing a list of users (with columns such as id, name, email, age).
+Use the csv-parser package to parse the CSV file asynchronously.
+Connect the data to a database (e.g., MongoDB or MySQL) and store it.
+Implement an API to fetch all users from the database, which returns the data in JSON format.
+Use async/await to handle asynchronous operations while reading the CSV and querying the database.
+Concepts Covered: Reading CSV file, Connecting to a database (MongoDB or MySQL), API creation, Async/Await.
+
+Problem 2: Promise and Callback Handling for File Operations
+Objective: Create a function that performs file operations using both Promises and Callbacks.
+Tasks:
+
+Implement a function to read data from a CSV file.
+Create two versions of the same function:
+One using Callbacks to return the file data after reading.
+One using Promises to handle the data reading and provide a resolved value upon success.
+Call the functions and log the output on the console when the file data is read successfully.
+Concepts Covered: Callback function, Promise function.
+
+Problem 3: Event Emitters for Data Handling
+Objective: Use EventEmitters to notify users when new data is added to the database.
+Tasks:
+
+Create a simple EventEmitter to trigger an event whenever new user data is added.
+When a new user is added to the database (after reading the CSV file), emit an event that logs a message like "New user added" along with the user’s details.
+Use the EventEmitter class to create an event listener that listens to the event and processes it asynchronously.
+Concepts Covered: EventEmitter, Event handling.
+
+Problem 4: Set Timeout for Handling Delayed Data Processing
+Objective: Use a timeout function to simulate delayed processing of CSV data and API response.
+Tasks:
+
+Simulate a delay in processing user data after reading the CSV file, using setTimeout to delay the execution of the database insertion by 2 seconds.
+Implement a timeout to simulate slow processing, and use the Promise API to ensure that the delay does not block other operations in the application.
+Create a simple API endpoint that will return a success message only after the timeout completes (after 2 seconds).
+Concepts Covered: Timeout functions, Data-driven methods, API delay simulation.
+
+Problem 5: Data-Driven Method for Dynamic Data Processing
+Objective: Create a data-driven API that processes CSV data and provides dynamic filtering options via query parameters.
+Tasks:
+
+Implement an API that allows users to query and filter data dynamically based on query parameters like age, name, and email from the CSV data.
+Use async/await to handle the asynchronous processing of data and return filtered results from the database.
+If the query parameters match the data in the database, return the corresponding records; otherwise, return a message indicating no results.
+Concepts Covered: Data-driven methods, API creation, Async/Await, Filtering based on dynamic input.
+
