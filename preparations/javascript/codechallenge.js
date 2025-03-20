@@ -627,17 +627,23 @@
 
 // ========================= LOGICAL PROGRAM -  17 =========================
 // QUESTION: 
-
-
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let rotatedArr = rotateArray(arr, 3);
+// console.log(rotatedArr);  // Output: [5, 6, 7, 1, 2, 3, 4]
 
 // ANSWER: 
+// function rotateArray(arr, k) {
+//     const n = arr.length;
+//     let rotatedArr = [];
+//     for (let i = 0; i < n; i++) {
+//         rotatedArr[(i + k) % n] = arr[i];
+//     }
+//     return rotatedArr;
+// }
 
-
-
-
-
-
-
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let rotatedArr = rotateArray(arr, 3);
+// console.log(rotatedArr);
 
 
 // CLARIFICATION: 

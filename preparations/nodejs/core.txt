@@ -65,7 +65,8 @@ Allow to user to navigate to specific url
  
  
 MIDDLEWARE:
-User-defined function that has each requests passes through before reaching the routes, and intercept of request, run the code and decide what to do next.
+User-defined function that has each requests passes through before reaching the routes, and intercept of request, 
+run the code and decide what to do next.
   application
       app.use((req, res, next) => {
         console.log('Request received');
@@ -205,6 +206,19 @@ Uniform Interface - operations are performed using standard HTTP methods (GET, P
 
 RESTful API:
 This is a more strict implementation of REST. It adheres fully to the REST principles and constraints. 
+
+
+Error Code:
+400 bad request - invalid request, modify the request
+401 authentication - authentication required
+403 authorize - user no access service
+404 Page not found - could not get the resource
+
+501 Internal Server Error - Server issue
+502 Bad Gatway - proxy user, ip address
+504 Timeout error - timely response to the server
+
+
 
 
 
