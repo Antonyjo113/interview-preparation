@@ -656,7 +656,28 @@
 
 // ANSWER: 
 
+// function parentheses(str) {
+//     const checks = { ')': '(', '}': '{', ']': '[' };
+//     const stack = [];
+    
+//     for (let i = 0; i < str.length; i++) {
+//         const char = str[i];
+        
+//         if ('([{'.includes(char)) {
+//             stack.push(char);
+//         } else if (')]}'.includes(char)) {
+//             if (stack.length > 0 && stack[stack.length - 1] === checks[char]) {
+//                 stack.pop();
+//             } else {
+//                 return false;
+//             }
+//         }
+//     }
+    
+//     return stack.length === 0;
+// }
 
+// console.log(parentheses("()[]"));
 
 
 

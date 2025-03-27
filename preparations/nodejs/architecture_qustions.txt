@@ -1,0 +1,168 @@
+MICROSERVICE:
+
+collection of independent service, Microservices are typically small, scalable, and maintainable, and they can be developed, deployed, and updated independently.
+
+const express = require('express');
+const axios = require('axios');
+const app = express();
+const PORT = 3003;
+
+app.use(express.json());
+
+// Sample endpoint to create an order
+app.post('/orders', async (req, res) => {
+  const { userId, productId, quantity } = req.body;
+
+  try {
+    // Fetch user and product details from the respective services
+    const userResponse = await axios.get(`http://localhost:3001/users/${userId}`);
+    const productResponse = await axios.get(`http://localhost:3002/products/${productId}`);
+
+    const user = userResponse.data;
+    const product = productResponse.data;
+
+    // Mock order creation
+    const order = {
+      user,
+      product,
+      quantity,
+      totalPrice: product.price * quantity,
+    };
+
+    res.status(201).json(order);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to create order' });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Order service is running on port ${PORT}`);
+});
+
+
+===============================================================================
+
+REST API vs RESTFUL API
+principles: Many not follow vs strcitly follow
+    principles - statelessness, client-server architectural, uniform interface, chacheness to improve the performance
+Resource Managment: May or many not follow the strcuture of data resouce vs clearly maintainable
+Data Representational: json, xml, plain text vs json format
+
+const express = require('express');
+const app = express();
+const PORT = 3000;
+
+app.use(express.json());
+
+// REST API - Non-RESTful style endpoints
+
+// Fetch user data (not using standard RESTful conventions)
+app.get('/get-user', (req, res) => {
+  res.json({ id: 1, name: 'John Doe' });
+});
+
+// Create a new user (using a non-RESTful route)
+app.post('/add-user', (req, res) => {
+  const { name } = req.body;
+  // Simulate adding a user to a database
+  res.json({ message: `User ${name} added successfully!` });
+});
+
+// Update user data (using PUT, but non-standard endpoint)
+app.put('/update-user/:id', (req, res) => {
+  const { name } = req.body;
+  const userId = req.params.id;
+  // Simulate updating the user data in the database
+  res.json({ message: `User ${userId} updated to ${name}` });
+});
+
+// Delete user data (non-standard endpoint)
+app.delete('/remove-user', (req, res) => {
+  res.json({ message: 'User deleted successfully' });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+
+
+const express = require('express');
+const app = express();
+const PORT = 3001;
+
+app.use(express.json());
+
+// RESTful API - Proper resource-oriented routes
+
+// Get a list of users (RESTful style)
+app.get('/users', (req, res) => {
+  res.json([
+    { id: 1, name: 'John Doe' },
+    { id: 2, name: 'Jane Smith' }
+  ]);
+});
+
+// Get a specific user by ID (RESTful style)
+app.get('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  res.json({ id: userId, name: 'John Doe' });
+});
+
+// Create a new user (RESTful style)
+app.post('/users', (req, res) => {
+  const { name } = req.body;
+  // Simulate creating a new user
+  res.status(201).json({ message: `User ${name} created successfully!` });
+});
+
+// Update a user (RESTful style)
+app.put('/users/:id', (req, res) => {
+  const { name } = req.body;
+  const userId = req.params.id;
+  // Simulate updating user details
+  res.json({ message: `User ${userId} updated to ${name}` });
+});
+
+// Delete a user (RESTful style)
+app.delete('/users/:id', (req, res) => {
+  const userId = req.params.id;
+  // Simulate deleting a user
+  res.json({ message: `User ${userId} deleted successfully!` });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+
+===============================================================================
+
+Compile-Time Error vs Runtime Error
+Compile-Time Error
+These errors are usually detected by the compiler and prevent the program from being successfully compiled into an executable.
+These errors are often caused by syntax mistakes, missing files, incorrect data types, or undeclared variables
+
+// JavaScript
+let x = 5;
+let y = "Hello";
+
+x = y;  // This could cause a compile-time error because you can't assign a string to an integer variable.
+
+// Java
+int number = "Hello";  // This will throw a compile-time error because you are assigning a string to an integer.
+
+Runtime Error
+These errors happen during the runtime of the program (when it is running) and are typically caused by unexpected situations or conditions in the program that the compiler cannot predict or check for.
+These errors are often caused by unexpected user inputs, invalid memory access, division by zero, or trying to use an object or variable that doesn't exist.
+
+let x = 5;
+let y = 0;
+console.log(x / y);  // Runtime error: Division by zero, result is Infinity or NaN, depending on the environment.
+
+int[] arr = new int[5];
+System.out.println(arr[10]);  // Runtime error: ArrayIndexOutOfBoundsException
+
+
+
+

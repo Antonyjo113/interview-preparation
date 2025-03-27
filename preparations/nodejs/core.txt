@@ -219,7 +219,12 @@ Error Code:
 504 Timeout error - timely response to the server
 
 
+Require & Import:
+Require - synchronous, can use anywhere in code
+Import - asynchronous, should use on the top level of code
 
 
+slice - extract a part from a array, with speficied from index to end index, not modified original array - array.slice(startIndex, endIndex);
+splice - extract a part from a array, with specified index, modify the original array - array.splice(startIndex, deleteCount, item1, item2, ...)
 
 

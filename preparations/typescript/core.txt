@@ -30,6 +30,73 @@ readonly - prevent to change the value
   names.push("Jack");
 
 
+Explicit - with data type - let firstName: string = "Dylan";
+Implicit - with no data type - let firstName = "Dylan";
+
+
+Special Data types
+any - any data type can be assign a variable -  let a: any = 'atnony', a = 88, a= true
+unknown - any data type can be assign a variable, but before an operation need to do type checking - 
+  let a: unknown = 23, a = 'Antony' , if(typeof a ==  'string') => a.toLowerCase()
+
+
+enum - represents a group of constants, 
+
+
+alias - define a custom name to a type, 'type' as keyword - type a = number
+
+
+as - let x: unknown = 'hello'; console.log((x as string).length);
+
+
+Utility Types
+Partial  - changes all the properties in an object to be optional.
+  let pointPart: Partial<Point> = {}; // `Partial` allows x and y to be optional
+  ointPart.x = 10;
+
+Required - changes all the properties in an object to be required.
+interface Car {
+  make: string;
+  model: string;
+  mileage?: number;
+}
+
+let myCar: Required<Car> = {
+  make: 'Ford',
+  model: 'Focus',
+  mileage: 12000 // `Required` forces mileage to be defined
+};
+
+Record is a shortcut to defining an object type with a specific key type and value type.
+const nameAgeMap: Record<string, number> = {
+  'Alice': 21,
+  'Bob': 25
+};
+
+Omit removes keys from an object type.
+interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
+
+const bob: Omit<Person, 'age' | 'location'> = {
+  name: 'Bob'
+  // `Omit` has removed age and location from the type and they can't be defined here
+};
+
+
+Pick removes all but the specified keys from an object type.
+interface Person {
+  name: string;
+  age: number;
+  location?: string;
+}
+
+const bob: Pick<Person, 'name'> = {
+  name: 'Bob'
+  // `Pick` has only kept name, so age and location were removed from the type and they can't be defined here
+};
 
 
 
