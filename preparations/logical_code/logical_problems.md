@@ -229,6 +229,34 @@ let object1 = [
 console.log(duplicatedObject(object1));
 ```
 
+## 7. ADD NEW OBJECT
+
+```javascript
+const users = [
+  { name: "John" },
+  { name: "David" },
+  { name: "Rahul" },
+  { name: "Jain" }
+];
+
+const newUser = { name: "Karthik" };
+
+// Find the index of the user named "David"
+const index = users.findIndex(user => user.name === "David");
+
+// Insert newUser just before "David" if found
+if (index !== -1) {
+  users.splice(index, 0, newUser);
+}
+
+console.log(users);
+```
 
 
+## 6. ARRAY SORTING
+
+```javascript
+    const numbers = [3, 2, 20];
+    numbers.sort((a, b) => a - b);
+```
 

@@ -16,7 +16,12 @@ Is a Casesensitive language
 
 3. JAVASCRIPT STATEMENTS
 Java Script statements compose of value, operators, expressions, keywords, and comments 
-
+    ';' - terminate of statement
+    '{}' - Blocks - is a sequence of one or more simple statement
+    'indentifier' - variables, functions, classes
+    '//, /* */' - comments
+    '+, -, *, /' - expressions
+    'keywords' - if, else, import .. etc
 
 4. COMMENTS
 To explain the JavaScript code - make it more readable
@@ -206,7 +211,6 @@ some() - method checks if some array values pass a test.
     const arr = [1, 2, 3, 4, 5];
     const hasEven = arr.some(element => element % 2 === 0);
     console.log(hasEven);  // Output: true (since there are even numbers)
-
 
 
 
